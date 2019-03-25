@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ggT-HN-tyg" userLabel="UIView" customClass="TicketDetailsHeaderView" customModule="buytickets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbk-ii-abB">
+                    <rect key="frame" x="0.0" y="0.0" width="379" height="57"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blR-IQ-cWn">
+                            <rect key="frame" x="20" y="39" width="339" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.4336693286895752" green="0.084969334304332733" blue="0.81700825691223145" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="blR-IQ-cWn" secondAttribute="trailing" constant="20" id="2BN-7t-CVI"/>
+                        <constraint firstItem="blR-IQ-cWn" firstAttribute="leading" secondItem="sbk-ii-abB" secondAttribute="leading" constant="20" id="9KS-7q-uZh"/>
+                        <constraint firstItem="blR-IQ-cWn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="sbk-ii-abB" secondAttribute="top" id="DTS-lD-23l"/>
+                        <constraint firstAttribute="bottom" secondItem="blR-IQ-cWn" secondAttribute="bottom" id="YrM-FQ-Sqo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sbk-ii-abB" secondAttribute="bottom" id="FSu-gv-zmA"/>
+                <constraint firstItem="sbk-ii-abB" firstAttribute="top" secondItem="ggT-HN-tyg" secondAttribute="top" id="MbF-Yo-Ee2"/>
+                <constraint firstItem="sbk-ii-abB" firstAttribute="leading" secondItem="ggT-HN-tyg" secondAttribute="leading" id="Xig-hk-8eK"/>
+                <constraint firstAttribute="trailing" secondItem="sbk-ii-abB" secondAttribute="trailing" id="auh-aS-ZLj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ePP-Wg-jPh"/>
+            <connections>
+                <outlet property="titleLabel" destination="blR-IQ-cWn" id="AdG-kJ-lgC"/>
+            </connections>
+            <point key="canvasLocation" x="-34.399999999999999" y="-90.404797601199405"/>
+        </view>
+    </objects>
+</document>
